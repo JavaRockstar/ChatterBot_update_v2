@@ -19,3 +19,15 @@ Here's what each command does:
     python3 chatbot.py runs the chatbot.py script to start the chat bot.
 
 Make sure that you have all the necessary dependencies installed and that your chatbot.py script is in the correct directory for this command sequence to work properly.
+
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
+
+chatbot = ChatBot('MyChatBot')
+
+# Create a new trainer for the chatbot
+trainer = ChatterBotCorpusTrainer(chatbot)
+
+# Train the chatbot based on your own dataset
+trainer.train("path/to/your_dataset.yml")
+
