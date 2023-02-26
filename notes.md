@@ -1,4 +1,5 @@
-```pip3 install https://github.com/RaSan147/ChatterBot_update/archive/refs/heads/master.zip
+```
+pip3 install https://github.com/RaSan147/ChatterBot_update/archive/refs/heads/master.zip
 python3 -m spacy download en_core_web_sm
 pip3 install chatterbot_corpus
 python3 -m chatterbot_corpus.download
