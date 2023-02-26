@@ -4,30 +4,4 @@ pip3 install chatterbot_corpus
 python3 -m chatterbot_corpus.download
 pip3 install --upgrade PyYAML
 pip3 uninstall pyyaml -y
-pip3 install PyYAML>=4.2b1
-python3 chatbot.py```
-
-Here's what each command does:
-
-    pip3 install https://github.com/RaSan147/ChatterBot_update/archive/refs/heads/master.zip installs the ChatterBot package from the specified GitHub repository.
-    python3 -m spacy download en_core_web_sm downloads the English language model used by ChatterBot for natural language processing.
-    pip3 install chatterbot_corpus installs the ChatterBot corpus, which provides a large collection of pre-existing conversational datasets.
-    python3 -m chatterbot_corpus.download downloads the ChatterBot corpus to be used for training.
-    pip3 install --upgrade PyYAML installs or upgrades the PyYAML package, which is a dependency of ChatterBot.
-    pip3 uninstall pyyaml -y uninstalls the old version of PyYAML that was previously installed.
-    pip3 install PyYAML>=4.2b1 installs a version of PyYAML that is compatible with the latest version of ChatterBot.
-    python3 chatbot.py runs the chatbot.py script to start the chat bot.
-
-Make sure that you have all the necessary dependencies installed and that your chatbot.py script is in the correct directory for this command sequence to work properly.
-
-from chatterbot import ChatBot
-from chatterbot.trainers import ChatterBotCorpusTrainer
-
-chatbot = ChatBot('MyChatBot')
-
-# Create a new trainer for the chatbot
-trainer = ChatterBotCorpusTrainer(chatbot)
-
-# Train the chatbot based on your own dataset
-trainer.train("path/to/your_dataset.yml")
-
+pip3 install PyYAML>=4.2b1```
